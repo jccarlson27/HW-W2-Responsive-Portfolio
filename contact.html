@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Contact Form</title>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
                     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,10 @@
                                 <a class="nav-link active" href="contact.html">CONTACT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="portfolio.html">PORFOLIO</a>
+                                <a class="nav-link active" href="portfolio.html">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="file:///C:/Users/14802/Downloads/JC%20Carlson%20Resume.pdf">RESUME</a>
                             </li>
                         </ul>
                     </nav>
@@ -53,27 +56,35 @@
         </div>
     </header>
     <div class="jumbotron">
-        <h1 class="display-4">Contact</h1>
-        <hr class="my-4">
-        <form>
-            <div class="form-group">
-                <label for="formGroupExampleInput">Name</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
+        <div class="conatiner">
+            <h1 class="display-4">Contact</h1>
+            <hr class="my-4">
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
 
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
-            </div>
-        </form>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                </div>
+                <div class="text-right">
+                    <button id="generate" type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
     <footer class="footer">
-        <div class="container">
-            <span class="text-muted">This footer is so sticky.</span>
+        <div class="container-fluid text-center">
+                <a href="https://www.facebook.com/jc.carlson.90" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/jc-carlson-38a401a3" class="fa fa-linkedin"></a>
+                <a href="https://github.com/jccarlson27" class="fa fa-github"></a>
         </div>
     </footer>
 </body>
